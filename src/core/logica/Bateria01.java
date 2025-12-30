@@ -4,6 +4,7 @@ public class Bateria01 {
     public static void main(String[] args) {
         exe01();
         exe02();
+        exe03();
     }
 
     public static void exe01(){
@@ -16,7 +17,7 @@ public class Bateria01 {
 
         double f = c * 9 / 5 + 32;
 
-        System.out.printf("%.0f graus Celsius equivale a %.0f graus Fahrenheit", c, f);
+        System.out.printf("%.0f graus Celsius equivale a %.0f graus Fahrenheit %n", c, f);
     }
 
     public static void exe02(){
@@ -30,6 +31,22 @@ public class Bateria01 {
 
         double c = ((f - 32) * 5) / 9;
 
-        System.out.printf("\n%.0f graus Fahrenheit equivale a %.0f graus Celsius", f, c);
+        System.out.printf("%.0f graus Fahrenheit equivale a %.0f graus Celsius %n", f, c);
+    }
+
+    public static void exe03(){
+        /*
+        c) Calcular e apresentar o valor do volume de uma lata de
+        óleo, utilizando a fórmula VOLUME ← 3.14159 * R ↑ 2 *
+        ALTURA.
+        */
+
+        double r = 3;
+
+        double a = 1.80;
+
+        double v = 3.14159 * (r * r) * a;
+
+        System.out.printf("Volume da lata: %.2f %n", v);
     }
 }
