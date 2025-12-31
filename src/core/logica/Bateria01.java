@@ -5,6 +5,7 @@ public class Bateria01 {
         exe01();
         exe02();
         exe03();
+        exe04();
     }
 
     public static void exe01(){
@@ -48,5 +49,34 @@ public class Bateria01 {
         double v = 3.14159 * (r * r) * a;
 
         System.out.printf("Volume da lata: %.2f %n", v);
+    }
+
+    public static void exe04(){
+        /*
+        d) Efetuar o cálculo da quantidade de litros de combustível
+        gasta em uma viagem, utilizando um automóvel que faz 12
+        quilômetros por litro. Para obter o cálculo, o usuário deve
+        fornecer o tempo gasto (variável TEMPO) e a velocidade
+        média (variável VELOCIDADE) durante a viagem. Dessa
+        forma, será possível obter a distância percorrida com a
+        fórmula DISTÂNCIA ← TEMPO * VELOCIDADE. A partir do
+        valor da distância, basta calcular a quantidade de litros de
+        combustível utilizada na viagem com a fórmula
+        LITROS_USADOS ← DISTÂNCIA / 12. O programa deve
+        apresentar os valores da velocidade média, tempo gasto na
+        viagem, a distância percorrida e a quantidade de litros
+        utilizada na viagem.
+        */
+
+        double tempo = 4;
+
+        double velocidade = 80;
+
+        double distancia = tempo * velocidade;
+
+        double litrosUsados = distancia / 12;
+
+
+        System.out.printf("O tempo de viajem foi de %.0f horas, velocidade média de %.0f km/h, distância percorrida de %.0f km e foram usados %.0f litros de combustível %n", tempo, velocidade, distancia, litrosUsados);
     }
 }
