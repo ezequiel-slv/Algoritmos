@@ -2,10 +2,11 @@ package core.logica;
 
 public class Bateria01 {
     public static void main(String[] args) {
-        exe01();
-        exe02();
-        exe03();
-        exe04();
+//        exe01();
+//        exe02();
+//        exe03();
+//        exe04();
+        exe05();
     }
 
     public static void exe01(){
@@ -68,7 +69,7 @@ public class Bateria01 {
         utilizada na viagem.
         */
 
-        double tempo = 4;
+        double tempo = 4.30;
 
         double velocidade = 80;
 
@@ -77,6 +78,25 @@ public class Bateria01 {
         double litrosUsados = distancia / 12;
 
 
-        System.out.printf("O tempo de viajem foi de %.0f horas, velocidade média de %.0f km/h, distância percorrida de %.0f km e foram usados %.0f litros de combustível %n", tempo, velocidade, distancia, litrosUsados);
+        System.out.printf("Tempo de viajem: %.2f horas %n", tempo);
+        System.out.printf("Velocidade média: %.0f km/h %n", velocidade);
+        System.out.printf("Distância percorrida: %.0f km %n", distancia);
+        System.out.printf("Litros usados: %.0f L %n", litrosUsados);
+    }
+
+    public static void exe05(){
+        /*
+        e) Efetuar o cálculo e apresentar o valor de uma prestação de
+        um bem em atraso, utilizando a fórmula PRESTAÇÃO ←
+        VALOR + (VALOR * (TAXA / 100) * TEMPO).
+        */
+
+        double valor = 385;
+        double taxa = 20;
+        double tempoMes = 3;
+
+        double prestacao = valor + (valor + (taxa / 100) * tempoMes);
+
+        System.out.println("Prestaçãp a ser pega com acressímos: " + prestacao);
     }
 }
