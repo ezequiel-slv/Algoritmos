@@ -6,7 +6,8 @@ public class Bateria01 {
 //        exe02();
 //        exe03();
 //        exe04();
-        exe05();
+//        exe05();
+//        exe06();
     }
 
     public static void exe01(){
@@ -99,4 +100,28 @@ public class Bateria01 {
 
         System.out.println("Prestaçãp a ser pega com acressímos: " + prestacao);
     }
+
+    public static void exe06(){
+        /*
+        f) Ler dois valores para as variáveis A e B e efetuar a troca dos
+        valores de forma que a variável A passe a possuir o valor da
+        variável B e a variável B passe a possuir o valor da variável
+        A. Apresentar os valores após a efetivação do
+        processamento da troca.
+        */
+
+        int a = 2;
+
+        int b = 4;
+
+        int temp = a;
+
+        a = b;
+        b = temp;
+
+        System.out.println(a);
+        System.out.println(b);
+    }
+
+
 }
