@@ -8,6 +8,7 @@ public class Bateria01 {
 //        exe04();
 //        exe05();
 //        exe06();
+        exe07();
     }
 
     public static void exe01(){
@@ -124,4 +125,42 @@ public class Bateria01 {
     }
 
 
+    public static void exe07(){
+        /*
+        g) Ler quatro valores numéricos inteiros e apresentar os
+        resultados armazenados em memória das adições e
+        multiplicações utilizando o mesmo raciocínio aplicado
+        quando do uso de propriedades distributivas para a máxima
+        combinação possível entre as quatro variáveis. Não é para
+        calcular a propriedade distributiva, deve-se apenas usar a
+        sua forma de combinação. Considerando a leitura de valores
+        para as variáveis A, B, C e D, devem ser feitas seis adições
+        e seis multiplicações, ou seja, deve ser combinada a
+        variável A com a variável B, a variável A com a variável C, a
+        variável A com a variável D. Depois, é necessário combinar
+        a variável B com a variável C e a variável B com a variável D
+        e, por fim, a variável C será combinada com a variável D.
+        */
+
+        int a = 10;
+        int b = 20;
+        int c = 40;
+        int d = 80;
+
+        System.out.println("Adição: " + (a + b));
+        System.out.println("Adição: " + (a + c));
+        System.out.println("Adição: " + (a + d));
+        System.out.println("Adição: " + (b + c));
+        System.out.println("Adição: " + (b + d));
+        System.out.println("Adição: " + (c + d));
+
+        System.out.println("-----");
+
+        System.out.println("Multiplicação: " + (a * b));
+        System.out.println("Multiplicação: " + (a * c));
+        System.out.println("Multiplicação: " + (a * d));
+        System.out.println("Multiplicação: " + (b * c));
+        System.out.println("Multiplicação: " + (b * d));
+        System.out.println("Multiplicação: " + (c * d));
+    }
 }
