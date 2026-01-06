@@ -8,7 +8,8 @@ public class Bateria01 {
 //        exe04();
 //        exe05();
 //        exe06();
-        exe07();
+//        exe07();
+        exe08();
     }
 
     public static void exe01(){
@@ -163,4 +164,22 @@ public class Bateria01 {
         System.out.println("Multiplicação: " + (b * d));
         System.out.println("Multiplicação: " + (c * d));
     }
+
+    public static void exe08(){
+        /*
+        h) Elaborar um programa que calcule e apresente o valor do
+        volume de uma caixa retangular, utilizando a fórmula
+        VOLUME ← COMPRIMENTO * LARGURA * ALTURA.
+        */
+
+        double comprimento = 30;
+        double largura = 10;
+        double altura = 25;
+
+        double volume = comprimento * largura * altura;
+
+        System.out.println("Volume da caixa: " + volume + "L");
+    }
+
+    
 }
