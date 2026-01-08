@@ -1,5 +1,7 @@
 package core.logica;
 
+import java.util.Scanner;
+
 public class Bateria01 {
     public static void main(String[] args) {
 //        exe01();
@@ -10,7 +12,9 @@ public class Bateria01 {
 //        exe06();
 //        exe07();
 //        exe08();
-        exe09();
+//        exe09();
+//        exe10();
+        exe11();
     }
 
     public static void exe01(){
@@ -192,5 +196,44 @@ public class Bateria01 {
         int valor = 15;
 
         System.out.println("Resultado de "+ valor + " elevado ao quadrado: "  + valor * valor);
+    }
+
+    public static void exe10(){
+        /*
+        j) Ler dois valores numéricos inteiros (representados pelas
+        variáveis A e B) e apresentar o resultado armazenado em
+        memória do quadrado da diferença do primeiro valor
+        (variável A) em relação ao segundo valor (variável B).
+        */
+
+        int a = 20;
+        int b = 10;
+
+        double result = (a - b)*(a - b);
+
+        System.out.println("Resultado: " + result);
+    }
+
+    public static void exe11(){
+        /*
+        k) Elaborar um programa que apresente o valor da conversão
+        em real (R$) de um valor lido em dólar (US$). O programa
+        deve solicitar o valor da cotação do dólar e também a
+        quantidade de dólares disponível com o usuário e
+        armazenar em memória o valor da conversão antes da
+        apresentação.
+        */
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite o valor em dolar: ");
+        double valorDolar = entrada.nextDouble();
+
+        System.out.println("Digite a cotação do dólar: ");
+        double valorCotacao = entrada.nextDouble();
+
+        double conversaoReal = valorDolar * valorCotacao;
+
+        System.out.printf("%.2f Dólares equivale a %.2f em Real", valorDolar, conversaoReal);
     }
 }
