@@ -9,7 +9,8 @@ public class Bateria01 {
 //        exe05();
 //        exe06();
 //        exe07();
-        exe08();
+//        exe08();
+        exe09();
     }
 
     public static void exe01(){
@@ -181,5 +182,15 @@ public class Bateria01 {
         System.out.println("Volume da caixa: " + volume + "L");
     }
 
-    
+    public static void exe09(){
+        /*
+        i) Efetuar a leitura de um valor numérico inteiro e apresentar o
+        resultado do valor lido elevado ao quadrado, sem efetuar o
+        armazenamento do resultado em memória.
+        */
+
+        int valor = 15;
+
+        System.out.println("Resultado de "+ valor + " elevado ao quadrado: "  + valor * valor);
+    }
 }
