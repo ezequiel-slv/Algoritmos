@@ -14,7 +14,8 @@ public class Bateria01 {
 //        exe08();
 //        exe09();
 //        exe10();
-        exe11();
+//        exe11();
+        exe12();
     }
 
     public static void exe01(){
@@ -235,5 +236,27 @@ public class Bateria01 {
         double conversaoReal = valorDolar * valorCotacao;
 
         System.out.printf("%.2f Dólares equivale a %.2f em Real", valorDolar, conversaoReal);
+    }
+
+    public static void exe12(){
+        /*
+        l) Elaborar um programa que apresente o valor da conversão
+        em dólar (US$) de um valor lido em real (R$). O programa
+        deve solicitar o valor da cotação do dólar e também a
+        quantidade de reais disponível com o usuário e armazenar
+        em memória o valor da conversão antes da apresentação.
+         */
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite o valor em Real: ");
+        double valorReal = entrada.nextDouble();
+
+        System.out.println("Digite a cotação do Dólar: ");
+        double valorCotacao = entrada.nextDouble();
+
+        double conversaoDolar = valorReal / valorCotacao;
+
+        System.out.printf("%.2f Reais equivale a %.2f Dólares", valorReal, conversaoDolar);
     }
 }
