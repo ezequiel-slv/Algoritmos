@@ -15,7 +15,8 @@ public class Bateria01 {
 //        exe09();
 //        exe10();
 //        exe11();
-        exe12();
+//        exe12();
+        exe13();
     }
 
     public static void exe01(){
@@ -258,5 +259,23 @@ public class Bateria01 {
         double conversaoDolar = valorReal / valorCotacao;
 
         System.out.printf("%.2f Reais equivale a %.2f Dólares", valorReal, conversaoDolar);
+    }
+
+    public static void exe13(){
+        /*
+        m) Construir um programa que leia três valores numéricos
+        inteiros (representados pelas variáveis A, B e C) e
+        apresentar como resultado final, armazenado em memória,
+        o valor da soma dos quadrados dos três valores lidos.
+         */
+
+        int a = 10;
+        int b = 40;
+        int c = 23;
+
+        double result = (a*a) + (b*b) + (c*c);
+        System.out.println("Resultado: " + result);
+
+
     }
 }
