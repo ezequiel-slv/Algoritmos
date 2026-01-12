@@ -17,7 +17,8 @@ public class Bateria01 {
 //        exe11();
 //        exe12();
 //        exe13();
-        exe14();
+//        exe14();
+        exe15();
     }
 
     public static void exe01(){
@@ -294,5 +295,25 @@ public class Bateria01 {
         System.out.println("Resultaado: " + result);
     }
 
-    
+    public static void exe15(){
+        /*
+        o) Elaborar um programa que leia quatro valores numéricos
+        inteiros (variáveis A, B, C e D). Ao final, o programa deve
+        apresentar o resultado, armazenado em memória, do
+        produto (variável P) do primeiro com o terceiro valor, e o
+        resultado da soma (variável S) do segundo com o quarto
+        valor.
+         */
+
+        int a = 3;
+        int b = 8;
+        int c = 2;
+        int d = 6;
+
+        double p = a * c;
+        double s = b + d;
+
+        System.out.println("Produto de a e c: " + p);
+        System.out.println("Soma de b e d: " + s);
+    }
 }
