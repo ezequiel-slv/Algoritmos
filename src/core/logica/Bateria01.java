@@ -16,7 +16,8 @@ public class Bateria01 {
 //        exe10();
 //        exe11();
 //        exe12();
-        exe13();
+//        exe13();
+        exe14();
     }
 
     public static void exe01(){
@@ -275,7 +276,23 @@ public class Bateria01 {
 
         double result = (a*a) + (b*b) + (c*c);
         System.out.println("Resultado: " + result);
-
-
     }
+
+    public static void exe14(){
+        /*
+        n) Construir um programa que leia três valores numéricos
+        inteiros (representados pelas variáveis A, B e C) e
+        apresentar como resultado final, armazenado em memória,
+        o valor do quadrado da soma dos três valores lidos.
+         */
+
+        int a = 3;
+        int b = 20;
+        int c = 12;
+
+        double result = (a + b + c) * (a + b + c);
+        System.out.println("Resultaado: " + result);
+    }
+
+    
 }
