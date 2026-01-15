@@ -19,7 +19,8 @@ public class Bateria01 {
 //        exe13();
 //        exe14();
 //        exe15();
-        exe16();
+//        exe16();
+        exe17();
     }
 
     public static void exe01(){
@@ -334,5 +335,25 @@ public class Bateria01 {
 
         System.out.printf("Salário base: %.3f\n", sm);
         System.out.printf("Salário com reajuste: %.3f", ns);
+    }
+
+    public static void exe17(){
+        /*
+        q) Elaborar um programa que calcule e apresente o valor do
+        resultado da área de uma circunferência (variável A). O
+        programa deve solicitar a entrada do valor do raio da
+        circunferência (variável R). Para a execução deste
+        problema, utilize a fórmula A ← 3.14159265* R ↑ 2.
+         */
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("Digite o valor do raio da circunferẽncia: ");
+        double valorR = entrada.nextDouble();
+
+        double pi = 3.14159265;
+
+        double a = pi * Math.pow(valorR, 2);
+
+        System.out.printf("Resultado: %.2f", a);
     }
 }
