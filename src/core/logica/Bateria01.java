@@ -18,7 +18,8 @@ public class Bateria01 {
 //        exe12();
 //        exe13();
 //        exe14();
-        exe15();
+//        exe15();
+        exe16();
     }
 
     public static void exe01(){
@@ -315,5 +316,23 @@ public class Bateria01 {
 
         System.out.println("Produto de a e c: " + p);
         System.out.println("Soma de b e d: " + s);
+    }
+
+    public static void exe16(){
+        /*
+        p) Elaborar um programa que leia o valor numérico
+        correspondente ao salário mensal (variável SM) de um
+        trabalhador e também fazer a leitura do valor do percentual
+        de reajuste (variável PR) a ser atribuído. Apresentar o valor
+        do novo salário (variável NS) após o armazenamento do
+        cálculo em memória.
+         */
+
+        double sm = 1.500;
+        double pr = 0.20;
+        double ns = sm + (sm * pr);
+
+        System.out.printf("Salário base: %.3f\n", sm);
+        System.out.printf("Salário com reajuste: %.3f", ns);
     }
 }
