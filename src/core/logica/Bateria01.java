@@ -393,14 +393,22 @@ public class Bateria01 {
         double candidatoC = 844;
 
         double votoValido = candidatoA + candidatoB + candidatoC;
-
         double totalEleitores = votoValido + votoNaoValido;
-
-        double porcVotosValidos = (totalEleitores - votoNaoValido) / 100;
+        double porcVotosValidos = (votoValido * 100) / totalEleitores;
+        double porcCandidatoA = (candidatoA * 100) / totalEleitores;
+        double porcCandidatoB = (candidatoB * 100) / totalEleitores;
+        double porcCandidatoC = (candidatoC * 100) / totalEleitores;
 
 
         System.out.printf("Total de eleitores: %.0f\n", totalEleitores);
-        System.out.printf("Percentual correspondente de votos válidos em relação à quantidade de eleitores: %.0f", porcVotosValidos);
+
+        System.out.printf("Votos válidos: %.0f\n", votoValido);
+
+        System.out.printf("Percentual correspondente de votos válidos em relação à quantidade de eleitores: %.0f\n", porcVotosValidos);
+
+        System.out.printf("Percentual correspondente de votos válidos do candidato A em relação à quantidade de eleitores: %.0f\n", porcCandidatoA);
+        System.out.printf("Percentual correspondente de votos válidos do candidato B em relação à quantidade de eleitores: %.0f\n", porcCandidatoB);
+        System.out.printf("Percentual correspondente de votos válidos do candidato C em relação à quantidade de eleitores: %.0f\n", porcCandidatoC);
 
     }
 }
