@@ -20,7 +20,8 @@ public class Bateria01 {
 //        exe14();
 //        exe15();
 //        exe16();
-        exe17();
+//        exe17();
+        exe18();
     }
 
     public static void exe01(){
@@ -355,5 +356,51 @@ public class Bateria01 {
         double a = pi * Math.pow(valorR, 2);
 
         System.out.printf("Resultado: %.2f", a);
+    }
+
+    public static void exe18(){
+        /*
+            r) Em uma eleição sindical concorreram ao cargo de
+            presidente três candidatos (representados pelas variáveis A,
+            B e C). Durante a apuração dos votos foram computados
+            votos nulos e em branco, além dos votos válidos para cada
+            candidato. Deve ser criado um programa de computador que
+            faça a leitura da quantidade de votos válidos para cada
+            candidato, além de ler também a quantidade de votos nulos
+            e em branco. Ao final, o programa deve apresentar o
+            número total de eleitores, considerando votos válidos, nulos
+            e em branco; o percentual correspondente de votos válidos
+            em relação à quantidade de eleitores; o percentual
+            correspondente de votos válidos do candidato A em relação
+            à quantidade de eleitores; o percentual correspondente de
+            votos válidos do candidato B em relação à quantidade de
+            eleitores; o percentual correspondente de votos válidos do
+            candidato C em relação à quantidade de eleitores; o
+            percentual correspondente de votos nulos em relação à
+            quantidade de eleitores; e, por último, o percentual
+            correspondente de votos em branco em relação à
+            quantidade de eleitores. Todos os cálculos devem
+            efetivamente ser armazenados em memória.
+         */
+
+        double votoNulo = 41;
+        double votoBranco = 206;
+
+        double votoNaoValido = votoBranco + votoNulo;
+
+        double candidatoA = 387;
+        double candidatoB = 1156;
+        double candidatoC = 844;
+
+        double votoValido = candidatoA + candidatoB + candidatoC;
+
+        double totalEleitores = votoValido + votoNaoValido;
+
+        double porcVotosValidos = (totalEleitores - votoNaoValido) / 100;
+
+
+        System.out.printf("Total de eleitores: %.0f\n", totalEleitores);
+        System.out.printf("Percentual correspondente de votos válidos em relação à quantidade de eleitores: %.0f", porcVotosValidos);
+
     }
 }
